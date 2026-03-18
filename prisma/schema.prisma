@@ -1,0 +1,169 @@
+// This is your Prisma schema file,
+// SmartCard SaaS - Student ID Card Generator
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// User model for authentication and role management
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  password      String?
+  role          String    @default("school") // "school" or "super_admin"
+  image         String?
+  emailVerified DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Relations
+  school        School?
+  sessions      Session[]
+  accounts      Account[]
+}
+
+// Account for NextAuth
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// School profile with customization options
+model School {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  schoolName      String
+  schoolCode      String?  @unique
+  logoUrl         String?
+  principalSignUrl String?
+  socialLink      String?  // For QR code redirect
+  address         String?
+  phone           String?
+  website         String?
+  
+  // Credits
+  totalCredits    Int      @default(5)  // 5 free credits on signup
+  usedCredits     Int      @default(0)
+  
+  // Theme customization
+  primaryColor    String   @default("#1e3a5f") // Navy Blue default
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  // Relations
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  students        Student[]
+  payments        Payment[]
+  cardTemplates   CardTemplate[]
+}
+
+// Student data imported from Excel
+model Student {
+  id            String   @id @default(cuid())
+  schoolId      String
+  rollNo        String
+  name          String
+  fatherName    String
+  className     String
+  section       String?
+  bloodGroup    String?
+  contactNo     String?
+  address       String?
+  dateOfBirth   String?
+  photoUrl      String?  // URL to stored photo
+  photoLocal    String?  // Local filename from ZIP
+  
+  // Card generation status
+  cardGenerated  Boolean  @default(false)
+  cardUrl        String?  // URL to generated card
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  school        School   @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+  
+  @@unique([schoolId, rollNo])
+}
+
+// Payment/recharge requests
+model Payment {
+  id             String   @id @default(cuid())
+  schoolId       String
+  amount         Int      // Amount in PKR
+  credits        Int      // Credits to be added
+  screenshotUrl  String?  // URL to payment screenshot
+  status         String   @default("pending") // pending, approved, rejected
+  adminNotes     String?
+  
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  reviewedAt     DateTime?
+  reviewedBy     String?
+  
+  school         School   @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+}
+
+// Card templates for schools
+model CardTemplate {
+  id            String   @id @default(cuid())
+  schoolId      String
+  name          String
+  templateType  String   @default("simple") // simple, advanced
+  orientation   String   @default("portrait") // portrait, landscape
+  primaryColor  String?
+  isActive      Boolean  @default(true)
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  school        School   @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+}
+
+// Analytics - Cards generated per school per month
+model Analytics {
+  id            String   @id @default(cuid())
+  schoolId      String?
+  month         String   // YYYY-MM format
+  cardsGenerated Int     @default(0)
+  revenue       Int      @default(0) // in PKR
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

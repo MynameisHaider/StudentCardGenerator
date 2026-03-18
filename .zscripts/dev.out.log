@@ -1,0 +1,775 @@
+==========================================
+[2026-03-18 10:16:15] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.32ms] ".env"
+bun install v1.3.10 (30e609e0)
+
++ @tailwindcss/postcss@4.1.18
++ @types/react@19.2.8
++ @types/react-dom@19.2.3
++ bun-types@1.3.6
++ eslint@9.39.2
++ eslint-config-next@16.1.3
++ tailwindcss@4.1.18
++ tw-animate-css@1.4.0
++ typescript@5.9.3
++ @dnd-kit/core@6.3.1
++ @dnd-kit/sortable@10.0.0
++ @dnd-kit/utilities@3.2.2
++ @hookform/resolvers@5.2.2
++ @mdxeditor/editor@3.52.3
++ @prisma/client@6.19.2
++ @radix-ui/react-accordion@1.2.12
++ @radix-ui/react-alert-dialog@1.1.15
++ @radix-ui/react-aspect-ratio@1.1.8
++ @radix-ui/react-avatar@1.1.11
++ @radix-ui/react-checkbox@1.3.3
++ @radix-ui/react-collapsible@1.1.12
++ @radix-ui/react-context-menu@2.2.16
++ @radix-ui/react-dialog@1.1.15
++ @radix-ui/react-dropdown-menu@2.1.16
++ @radix-ui/react-hover-card@1.1.15
++ @radix-ui/react-label@2.1.8
++ @radix-ui/react-menubar@1.1.16
++ @radix-ui/react-navigation-menu@1.2.14
++ @radix-ui/react-popover@1.1.15
++ @radix-ui/react-progress@1.1.8
++ @radix-ui/react-radio-group@1.3.8
++ @radix-ui/react-scroll-area@1.2.10
++ @radix-ui/react-select@2.2.6
++ @radix-ui/react-separator@1.1.8
++ @radix-ui/react-slider@1.3.6
++ @radix-ui/react-slot@1.2.4
++ @radix-ui/react-switch@1.2.6
++ @radix-ui/react-tabs@1.1.13
++ @radix-ui/react-toast@1.2.15
++ @radix-ui/react-toggle@1.1.10
++ @radix-ui/react-toggle-group@1.1.11
++ @radix-ui/react-tooltip@1.2.8
++ @reactuses/core@6.1.9
++ @tanstack/react-query@5.90.19
++ @tanstack/react-table@8.21.3
++ class-variance-authority@0.7.1
++ clsx@2.1.1
++ cmdk@1.1.1
++ date-fns@4.1.0
++ embla-carousel-react@8.6.0
++ framer-motion@12.26.2
++ input-otp@1.4.2
++ lucide-react@0.525.0
++ next@16.1.3
++ next-auth@4.24.13
++ next-intl@4.7.0
++ next-themes@0.4.6
++ prisma@6.19.2
++ react@19.2.3
++ react-day-picker@9.13.0
++ react-dom@19.2.3
++ react-hook-form@7.71.1
++ react-markdown@10.1.0
++ react-resizable-panels@3.0.6
++ react-syntax-highlighter@15.6.6
++ recharts@2.15.4
++ sharp@0.34.5
++ sonner@2.0.7
++ tailwind-merge@3.4.0
++ tailwindcss-animate@1.0.7
++ uuid@11.1.0
++ vaul@1.1.2
++ z-ai-web-dev-sdk@0.0.17
++ zod@4.3.5
++ zustand@5.0.10
+
+827 packages installed [9.89s]
+==========================================
+[2026-03-18 10:16:25] Completed: bun install
+[LOG] Step: bun install | Duration: 10s
+==========================================
+
+==========================================
+[2026-03-18 10:16:25] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+SQLite database custom.db created at file:/home/z/my-project/db/custom.db
+
+🚀  Your database is now in sync with your Prisma schema. Done in 14ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 61ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.5.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-18 10:16:26] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-18 10:16:26] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-18 10:16:26] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-18 10:16:26] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.9.104:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+✓ Ready in 774ms
+ GET / 200 in 2.7s (compile: 2.6s, render: 135ms)
+Next.js dev server is ready!
+==========================================
+ GET / 200 in 2.7s (compile: 2.5s, render: 203ms)
+[2026-03-18 10:16:30] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-18 10:16:30] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 29ms (compile: 3ms, render: 26ms)
+[BUN] Health check passed
+==========================================
+[2026-03-18 10:16:30] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-18 10:16:30] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-18 10:16:30] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 331).
+Use 'kill 331' to stop it.
+⚠ Cross origin request detected from preview-chat-d1d9b1ec-0fe5-470c-8233-3ec943e404bb.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 42ms (compile: 4ms, render: 37ms)
+ GET / 200 in 62ms (compile: 35ms, render: 28ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 17ms (compile: 2ms, render: 14ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 58ms (compile: 2ms, render: 56ms)
+✓ Compiled in 174ms
+ GET / 200 in 35ms (compile: 2ms, render: 32ms)
+ GET / 200 in 40ms (compile: 3ms, render: 37ms)
+✓ Compiled in 254ms
+⚠ Fast Refresh had to perform a full reload when ./src/app/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 152ms (compile: 33ms, render: 119ms)
+ GET / 200 in 58ms (compile: 3ms, render: 55ms)
+ GET / 200 in 49ms (compile: 2ms, render: 47ms)
+✓ Compiled in 173ms
+ GET / 200 in 64ms (compile: 31ms, render: 34ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 20ms (compile: 1962µs, render: 18ms)
+ GET / 200 in 45ms (compile: 28ms, render: 17ms)
+ GET / 200 in 14ms (compile: 1894µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1880µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1914µs, render: 12ms)
+ GET / 200 in 16ms (compile: 1883µs, render: 14ms)
+ GET / 200 in 14ms (compile: 1947µs, render: 12ms)
+ GET / 200 in 16ms (compile: 3ms, render: 14ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 14ms (compile: 1913µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1961µs, render: 12ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 15ms (compile: 1984µs, render: 13ms)
+ GET / 200 in 51ms (compile: 30ms, render: 21ms)
+ GET / 200 in 27ms (compile: 3ms, render: 25ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 14ms (compile: 1811µs, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 2ms, render: 16ms)
+ GET / 200 in 14ms (compile: 1931µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1884µs, render: 12ms)
+ GET / 200 in 16ms (compile: 1943µs, render: 14ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 1950µs, render: 12ms)
+✓ Compiled in 165ms
+ GET / 200 in 49ms (compile: 26ms, render: 23ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 13ms (compile: 1858µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1900µs, render: 12ms)
+ GET / 200 in 15ms (compile: 1822µs, render: 13ms)
+ GET / 200 in 13ms (compile: 1811µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1787µs, render: 11ms)
+ GET / 200 in 18ms (compile: 1894µs, render: 16ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 13ms (compile: 1808µs, render: 12ms)
+ GET / 200 in 20ms (compile: 1932µs, render: 18ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 14ms (compile: 1951µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1886µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1853µs, render: 13ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 50ms (compile: 30ms, render: 20ms)
+ GET / 200 in 29ms (compile: 2ms, render: 27ms)
+ GET / 200 in 16ms (compile: 2ms, render: 13ms)
+ GET / 200 in 14ms (compile: 1985µs, render: 12ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 14ms (compile: 1993µs, render: 12ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 13ms (compile: 1859µs, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 16ms (compile: 1950µs, render: 14ms)
+ GET / 200 in 15ms (compile: 3ms, render: 12ms)
+ GET / 200 in 14ms (compile: 1951µs, render: 12ms)
+ GET / 200 in 24ms (compile: 3ms, render: 21ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 13ms (compile: 1899µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1801µs, render: 12ms)
+ GET / 200 in 13ms (compile: 1805µs, render: 11ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 16ms (compile: 3ms, render: 14ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 13ms (compile: 1872µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1881µs, render: 11ms)
+ GET / 200 in 15ms (compile: 1948µs, render: 13ms)
+ GET / 200 in 16ms (compile: 2ms, render: 13ms)
+ GET / 200 in 16ms (compile: 2ms, render: 13ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 14ms (compile: 3ms, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 22ms (compile: 2ms, render: 20ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 14ms (compile: 1865µs, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 14ms (compile: 1790µs, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 19ms (compile: 1827µs, render: 17ms)
+ GET / 200 in 13ms (compile: 1815µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1828µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1882µs, render: 12ms)
+ GET / 200 in 13ms (compile: 1925µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1890µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1852µs, render: 12ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 16ms (compile: 2ms, render: 13ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 2ms, render: 16ms)
+ GET / 200 in 19ms (compile: 3ms, render: 17ms)
+ GET / 200 in 15ms (compile: 1984µs, render: 13ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 17ms (compile: 1859µs, render: 15ms)
+ GET / 200 in 13ms (compile: 1964µs, render: 11ms)
+ GET / 200 in 15ms (compile: 1840µs, render: 13ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 83ms (compile: 51ms, render: 32ms)
+ GET / 200 in 28ms (compile: 2ms, render: 26ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 13ms (compile: 1769µs, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 2ms, render: 16ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 21ms (compile: 2ms, render: 19ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 24ms (compile: 2ms, render: 22ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 13ms (compile: 1884µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1816µs, render: 11ms)
+ GET / 200 in 144ms (compile: 3ms, render: 141ms)
+ GET / 200 in 53ms (compile: 2ms, render: 51ms)
+ GET / 200 in 46ms (compile: 1753µs, render: 44ms)
+ GET / 200 in 49ms (compile: 2ms, render: 47ms)
+ GET / 200 in 49ms (compile: 2ms, render: 47ms)
+✓ Compiled in 179ms
+ GET / 200 in 75ms (compile: 50ms, render: 25ms)
+ GET / 200 in 14ms (compile: 1983µs, render: 12ms)
+ GET / 200 in 19ms (compile: 1956µs, render: 17ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 16ms (compile: 1924µs, render: 14ms)
+ GET / 200 in 14ms (compile: 1985µs, render: 12ms)
+ GET / 200 in 14ms (compile: 3ms, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 20ms (compile: 2ms, render: 17ms)
+ GET / 200 in 14ms (compile: 1955µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1930µs, render: 12ms)
+ GET / 200 in 18ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 14ms (compile: 1904µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1933µs, render: 12ms)
+ GET / 200 in 18ms (compile: 1940µs, render: 16ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 23ms (compile: 2ms, render: 21ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 3ms, render: 12ms)
+ GET / 200 in 15ms (compile: 1940µs, render: 13ms)
+ GET / 200 in 129ms (compile: 3ms, render: 127ms)
+ GET / 200 in 57ms (compile: 3ms, render: 54ms)
+ GET / 200 in 48ms (compile: 2ms, render: 46ms)
+ GET / 200 in 48ms (compile: 1916µs, render: 46ms)
+✓ Compiled in 181ms
+ GET / 200 in 77ms (compile: 50ms, render: 27ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 25ms (compile: 2ms, render: 23ms)
+ GET / 200 in 15ms (compile: 1935µs, render: 13ms)
+ GET / 200 in 16ms (compile: 1806µs, render: 14ms)
+ GET / 200 in 14ms (compile: 1829µs, render: 12ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 20ms (compile: 2ms, render: 17ms)
+ GET / 200 in 14ms (compile: 1765µs, render: 12ms)
+ GET / 200 in 17ms (compile: 3ms, render: 15ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 1956µs, render: 12ms)
+ GET / 200 in 13ms (compile: 1930µs, render: 11ms)
+ GET / 200 in 19ms (compile: 2ms, render: 16ms)
+ GET / 200 in 13ms (compile: 1915µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1885µs, render: 12ms)
+ GET / 200 in 14ms (compile: 1843µs, render: 12ms)
+ GET / 200 in 20ms (compile: 1897µs, render: 18ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 13ms (compile: 1823µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1733µs, render: 11ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 17ms (compile: 2ms, render: 14ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 116ms (compile: 2ms, render: 113ms)
+ GET / 200 in 58ms (compile: 3ms, render: 55ms)
+ GET / 200 in 52ms (compile: 2ms, render: 50ms)
+ GET / 200 in 49ms (compile: 2ms, render: 47ms)
+ GET / 200 in 50ms (compile: 2ms, render: 48ms)
+ GET / 200 in 55ms (compile: 2ms, render: 53ms)
+ GET / 200 in 47ms (compile: 1896µs, render: 45ms)
+ GET / 200 in 49ms (compile: 2ms, render: 47ms)
+✓ Compiled in 169ms
+ GET / 200 in 71ms (compile: 46ms, render: 25ms)
+ GET / 200 in 16ms (compile: 1983µs, render: 14ms)
+ GET / 200 in 14ms (compile: 1789µs, render: 12ms)
+ GET / 200 in 25ms (compile: 1796µs, render: 23ms)
+ GET / 200 in 16ms (compile: 1954µs, render: 15ms)
+ GET / 200 in 14ms (compile: 1937µs, render: 12ms)
+ GET / 200 in 16ms (compile: 1872µs, render: 14ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 16ms (compile: 3ms, render: 12ms)
+ GET / 200 in 16ms (compile: 1882µs, render: 14ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 20ms (compile: 2ms, render: 18ms)
+ GET / 200 in 13ms (compile: 1833µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1953µs, render: 12ms)
+ GET / 200 in 13ms (compile: 1805µs, render: 11ms)
+ GET / 200 in 18ms (compile: 1954µs, render: 16ms)
+ GET / 200 in 13ms (compile: 1829µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1975µs, render: 12ms)
+ GET / 200 in 13ms (compile: 1823µs, render: 11ms)
+ GET / 200 in 27ms (compile: 1797µs, render: 25ms)
+ GET / 200 in 16ms (compile: 1926µs, render: 14ms)
+ GET / 200 in 14ms (compile: 1911µs, render: 12ms)
+ GET / 200 in 13ms (compile: 1821µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1824µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1824µs, render: 12ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 16ms (compile: 2ms, render: 13ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 13ms (compile: 1847µs, render: 11ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 14ms (compile: 1945µs, render: 12ms)
+ GET / 200 in 127ms (compile: 2ms, render: 124ms)
+ GET / 200 in 194ms (compile: 53ms, render: 141ms)
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({
+ [90m 8 |[39m   variable[33m:[39m [32m"--font-geist-sans"[39m[33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 992ms (compile: 876ms, render: 115ms)
+✓ Compiled in 143ms
+⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 271ms (compile: 117ms, render: 154ms)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 1318ms (compile: 1283ms, render: 34ms)
+⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 61ms (compile: 3ms, render: 58ms)
+ GET /api/auth/session 200 in 56ms (compile: 43ms, render: 13ms)
+✓ Compiled in 67ms
+ GET / 200 in 94ms (compile: 66ms, render: 28ms)
+ GET / 200 in 135ms (compile: 2ms, render: 132ms)
+ GET /api/auth/session 200 in 43ms (compile: 32ms, render: 11ms)
+ GET / 200 in 50ms (compile: 2ms, render: 48ms)
+ GET /api/auth/session 200 in 38ms (compile: 28ms, render: 10ms)
+==========================================
+[2026-03-18 11:04:39] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.08ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+Checked 897 installs across 964 packages (no changes) [38.00ms]
+==========================================
+[2026-03-18 11:04:39] Completed: bun install
+[LOG] Step: bun install | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-18 11:04:39] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 94ms
+
+==========================================
+[2026-03-18 11:04:41] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 2s
+==========================================
+
+==========================================
+[2026-03-18 11:04:41] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+[2026-03-18 11:04:41] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+$ next dev -p 3000 2>&1 | tee dev.log
+==========================================
+[2026-03-18 11:04:41] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+ GET / 200 in 54ms (compile: 3ms, render: 51ms)
+Next.js dev server is ready!
+==========================================
+[2026-03-18 11:04:41] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-18 11:04:41] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 48ms (compile: 1853µs, render: 46ms)
+[BUN] Health check passed
+==========================================
+[2026-03-18 11:04:41] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-18 11:04:41] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-18 11:04:41] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 1139).
+Use 'kill 1139' to stop it.
+⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3000)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+[?25h
+ GET / 200 in 51ms (compile: 5ms, render: 46ms)
+ GET /api/auth/session 200 in 38ms (compile: 29ms, render: 9ms)

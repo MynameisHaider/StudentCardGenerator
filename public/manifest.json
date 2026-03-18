@@ -1,0 +1,21 @@
+{
+  "name": "SmartCard - Student ID Generator",
+  "short_name": "SmartCard",
+  "description": "Professional Student ID Card Generator for Pakistani Schools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}
