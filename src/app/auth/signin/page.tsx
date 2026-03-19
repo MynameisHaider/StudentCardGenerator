@@ -188,10 +188,10 @@ export default function SignInPage() {
                   </Button>
 
                   {/* Demo accounts */}
-                  <div className="mt-4 p-3 bg-slate-50 rounded-lg text-sm">
-                    <p className="font-medium text-slate-700 mb-2">Demo Accounts:</p>
-                    <p className="text-slate-600">School Admin: school@demo.com / demo123</p>
-                    <p className="text-slate-600">Super Admin: admin@demo.com / admin123</p>
+                  //<div className="mt-4 p-3 bg-slate-50 rounded-lg text-sm">
+                   // <p className="font-medium text-slate-700 mb-2">Demo Accounts:</p>
+                   // <p className="text-slate-600">School Admin: school@demo.com / demo123</p>
+                   // <p className="text-slate-600">Super Admin: admin@demo.com / admin123</p>
                   </div>
                 </form>
               </TabsContent>
